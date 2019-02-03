@@ -15,11 +15,12 @@ class  HW3 extends Component{
     startHandler = ()=>{
         this.setState({started:true});
         var interval =setInterval(() => {
-            this.setState({number:this.state.number+1});
             if(!this.state.started){
-            clearInterval(interval);
-            return;
-            }
+                clearInterval(interval);
+                return;
+                }
+            this.setState({number:this.state.number+1});
+
         }, 1000);
 
     }
@@ -37,7 +38,7 @@ class  HW3 extends Component{
 
             <div>
 
-            <p>{this.state.number}</p>
+           <h1>{this.state.number}</h1>
             <br/>
 
             <button onClick ={this.state.started?this.stopHandler:this.startHandler}>{this.state.started? "Stop":"Start"}</button> 
