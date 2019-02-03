@@ -21,7 +21,7 @@ class HW2 extends Component{
 
             <div>
             
-           <p fontSize = {40} > {this.state.number} </p>
+           <h1> {this.state.number} </h1>
 
             <br/>
 
