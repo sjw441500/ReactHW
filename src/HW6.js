@@ -57,7 +57,13 @@ const TodoList = props => {
   );
 };
 class AddTodo extends Component {
-  state = {input: ''};
+
+  constructor(props){
+
+    super(props);
+    this.state = {input: ''};
+  }
+  
 
   render() {
     return (
