@@ -30,7 +30,7 @@ class HW7 extends Component{
             {this.props.buttonText}
             </Button>
 
-            <Modal show={this.state.open} onHide={this.handleClose}>
+            <Modal show={this.state.open} onHide={this.closeHandler}>
           <Modal.Header closeButton>
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
